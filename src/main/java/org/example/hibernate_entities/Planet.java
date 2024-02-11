@@ -11,7 +11,7 @@ import lombok.Data;
 @Data
 public class Planet {
     @Id
-    public String id;
+    private String id;
     @Column(name="name")
-    public String name;
+    private String name;
 }

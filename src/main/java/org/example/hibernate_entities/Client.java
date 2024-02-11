@@ -10,10 +10,10 @@ import java.util.List;
 public class Client {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    public Long id;
+    private Long id;
     @Column(name="name")
-    public String name;
+    private String name;
 
     @OneToMany(mappedBy = "client", cascade = CascadeType.ALL)
-    public List<Ticket> tickets;
+    private List<Ticket> tickets;
 }
